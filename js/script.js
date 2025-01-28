@@ -1,16 +1,39 @@
 function toggleMenu() {
   const menu = document.getElementById("mobileMenu");
-  menu.classList.toggle("hidden");
+  const menuContent = document.getElementById("menuContent");
+  const isHidden = menu.classList.contains("hidden");
+
+  if (isHidden) {
+    menu.classList.remove("hidden");
+    setTimeout(() => {
+      menuContent.classList.remove("translate-x-full");
+    }, 10);
+  } else {
+    menuContent.classList.add("translate-x-full");
+    menuContent.addEventListener(
+      "transitionend",
+      () => {
+        menu.classList.add("hidden");
+      },
+      { once: true }
+    );
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   const preloader = document.getElementById("preloader");
   const content = document.getElementById("content");
 
-  setTimeout(() => {
+  if (!localStorage.getItem("preloaderShown")) {
+    setTimeout(() => {
+      preloader.style.display = "none";
+      content.style.display = "block";
+      localStorage.setItem("preloaderShown", "true");
+    }, 5000);
+  } else {
     preloader.style.display = "none";
     content.style.display = "block";
-  }, 5000);
+  }
 });
 
 document.querySelectorAll(".person").forEach((person) => {
