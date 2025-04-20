@@ -2,508 +2,572 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MarSU Alumni</title>
-  <link rel="icon" type="image/x-icon" href="/images/department-logo.png">
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap"
-    rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap"
-    rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarSU Alumni</title>
+    <link rel="icon" type="image/x-icon" href="/images/department-logo.png">
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-  <!-- Preloader -->
-  <div id="preloader" class="fixed inset-0 flex items-center justify-center bg-gray-100 dark:bg-gray-800 z-50">
-    <div role="status"
-      class="space-y-8 animate-pulse md:space-y-0 md:space-x-8 rtl:space-x-reverse md:flex md:items-center">
-      <div class="flex items-center justify-center w-full h-48 bg-gray-300 rounded-sm sm:w-96 dark:bg-gray-700">
-        <svg class="w-10 h-10 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor" viewBox="0 0 20 18">
-          <path
-            d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z" />
-        </svg>
-      </div>
-      <div class="w-full">
-        <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[480px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[440px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px]"></div>
-      </div>
-      <span class="sr-only">Loading...</span>
+    <!-- Preloader -->
+    <div id="preloader" class="fixed inset-0 flex items-center justify-center bg-gray-100 dark:bg-gray-800 z-50">
+        <div role="status"
+            class="space-y-8 animate-pulse md:space-y-0 md:space-x-8 rtl:space-x-reverse md:flex md:items-center">
+            <div class="flex items-center justify-center w-full h-48 bg-gray-300 rounded-sm sm:w-96 dark:bg-gray-700">
+                <svg class="w-10 h-10 text-gray-200 dark:text-gray-600" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                    <path
+                        d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z" />
+                </svg>
+            </div>
+            <div class="w-full">
+                <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+                <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[480px] mb-2.5"></div>
+                <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+                <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[440px] mb-2.5"></div>
+                <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
+                <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px]"></div>
+            </div>
+            <span class="sr-only">Loading...</span>
+        </div>
     </div>
-  </div>
 
-  <main id="content" style="display: none;">
-    <!-- Navigational Bar Section -->
-    <header class="pb-12 lg:pb-16" id="homeSection"
-      style="background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('images/hero-bg.jpeg'); background-size: cover; background-position: center;">
-      <nav class="absolute inset-x-0 top-0 z-50 px-12 sm:mb-4">
-        <nav class="flex items-center justify-between py-6" aria-label="Global">
-          <div class="flex lg:flex-1">
-            <a href="#homeSection" class="-m-1.5 p-1.5">
-              <img class="h-12 w-auto" src="images/department-logo.png" alt="department-logo.png" />
-            </a>
-          </div>
-          <div class="flex lg:hidden">
-            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-              onclick="toggleMenu()">
-              <svg class="size-8" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-            </button>
-          </div>
-          <div class="hidden lg:flex lg:gap-x-12">
-            <a href="#homeSection"
-              class="relative text-sm/6 font-questrial text-white hover:before:w-full before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-0 before:bg-yellow-400 before:transition-all before:duration-300">
-              Home
-            </a>
-            <a href="#aboutSection"
-              class="relative text-sm/6 font-questrial text-white hover:before:w-full before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-0 before:bg-yellow-400 before:transition-all before:duration-300">
-              About
-            </a>
-            <a href="#alumniSection"
-              class="relative text-sm/6 font-questrial text-white hover:before:w-full before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-0 before:bg-yellow-400 before:transition-all before:duration-300">
-              Alumni
-            </a>
-            <a href="#officialsSection"
-              class="relative text-sm/6 font-questrial text-white hover:before:w-full before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-0 before:bg-yellow-400 before:transition-all before:duration-300">
-              Officials
-            </a>
-          </div>
-          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" class="text-sm/6 font-questrial text-white">Log in <span aria-hidden="true">&rarr;</span></a>
-          </div>
-        </nav>
+    <main id="content" style="display: none;">
+        <!-- Navigational Bar Section -->
+        <header class="pb-12 lg:pb-16" id="homeSection"
+            style="background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('images/hero-bg.jpeg'); background-size: cover; background-position: center;">
+            <nav class="absolute inset-x-0 top-0 z-50 px-12 sm:mb-4">
+                <nav class="flex items-center justify-between py-6" aria-label="Global">
+                    <div class="flex lg:flex-1">
+                        <a href="#homeSection" class="-m-1.5 p-1.5">
+                            <img class="h-12 w-auto" src="images/department-logo.png" alt="department-logo.png" />
+                        </a>
+                    </div>
+                    <div class="flex lg:hidden">
+                        <button type="button"
+                            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                            onclick="toggleMenu()">
+                            <svg class="size-8" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white"
+                                aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="hidden lg:flex lg:gap-x-12">
+                        <a href="#homeSection"
+                            class="relative text-sm/6 font-questrial text-white hover:before:w-full before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-0 before:bg-yellow-400 before:transition-all before:duration-300">
+                            Home
+                        </a>
+                        <a href="#aboutSection"
+                            class="relative text-sm/6 font-questrial text-white hover:before:w-full before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-0 before:bg-yellow-400 before:transition-all before:duration-300">
+                            About
+                        </a>
+                        <a href="#alumniSection"
+                            class="relative text-sm/6 font-questrial text-white hover:before:w-full before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-0 before:bg-yellow-400 before:transition-all before:duration-300">
+                            Alumni
+                        </a>
+                        <a href="#officialsSection"
+                            class="relative text-sm/6 font-questrial text-white hover:before:w-full before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-0 before:bg-yellow-400 before:transition-all before:duration-300">
+                            Officials
+                        </a>
+                    </div>
+                    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                        <a href="#" class="text-sm/6 font-questrial text-white">Log in <span
+                                aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </nav>
 
-        <div id="mobileMenu" class="lg:hidden fixed inset-0 z-50 hidden">
-          <!-- Background backdrop -->
-          <div class="fixed inset-0 bg-black bg-opacity-50"></div>
+                <div id="mobileMenu" class="lg:hidden fixed inset-0 z-50 hidden">
+                    <!-- Background backdrop -->
+                    <div class="fixed inset-0 bg-black bg-opacity-50"></div>
 
-          <!-- Sliding menu -->
-          <div id="menuContent"
-            class="fixed inset-y-0 right-0 z-50 w-[70%] transform translate-x-full bg-white px-6 py-6 sm:ring-1 sm:ring-gray-900/10 transition-transform duration-300 ease-in-out">
-            <div class="flex items-center justify-between">
-              <a href="#" class="-m-1.5 p-1.5">
-                <img class="h-16 w-auto" src="images/department-logo.png" alt="department-logo.png" />
-              </a>
-              <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" onclick="toggleMenu()">
-                <svg class="size-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                  aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-            <div class="mt-6 flow-root">
-              <div class="-my-6 divide-y divide-gray-500/10">
-                <div class="space-y-2 p-8">
-                  <a href="#homeSection"
-                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold font-questrial text-gray-700 hover:bg-gray-50">Home</a>
-                  <a href="#aboutSection"
-                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold font-questrial text-gray-700 hover:bg-gray-50">About</a>
-                  <a href="#alumniSection"
-                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold font-questrial text-gray-700 hover:bg-gray-50">Alumni</a>
-                  <a href="#officialsSection"
-                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold font-questrial text-gray-700 hover:bg-gray-50">Officials</a>
+                    <!-- Sliding menu -->
+                    <div id="menuContent"
+                        class="fixed inset-y-0 right-0 z-50 w-[70%] transform translate-x-full bg-white px-6 py-6 sm:ring-1 sm:ring-gray-900/10 transition-transform duration-300 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="-m-1.5 p-1.5">
+                                <img class="h-16 w-auto" src="images/department-logo.png" alt="department-logo.png" />
+                            </a>
+                            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" onclick="toggleMenu()">
+                                <svg class="size-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mt-6 flow-root">
+                            <div class="-my-6 divide-y divide-gray-500/10">
+                                <div class="space-y-2 p-8">
+                                    <a href="#homeSection"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold font-questrial text-gray-700 hover:bg-gray-50">Home</a>
+                                    <a href="#aboutSection"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold font-questrial text-gray-700 hover:bg-gray-50">About</a>
+                                    <a href="#alumniSection"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold font-questrial text-gray-700 hover:bg-gray-50">Alumni</a>
+                                    <a href="#officialsSection"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold font-questrial text-gray-700 hover:bg-gray-50">Officials</a>
+                                </div>
+                                <div class="p-8 ">
+                                    <a href="#"
+                                        class="-mx-3 block rounded-lg px-3 text-base/7 font-semibold font-questrial text-gray-700 hover:bg-gray-50">Log
+                                        in</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="p-8 ">
-                  <a href="#"
-                    class="-mx-3 block rounded-lg px-3 text-base/7 font-semibold font-questrial text-gray-700 hover:bg-gray-50">Log
-                    in</a>
+            </nav>
+
+            <section class="px-6 pt-16 lg:px-18">
+                <div class="mx-auto max-w-2xl pb-2 lg:pb-8 mt-12 sm:mt-18 lg:mt-18">
+                    <!-- Hero Logo -->
+                    <div class="sm:mb-8 flex justify-center items-center">
+                        <img class="h-32 custom:h-56 lg:h-64 w-auto" src="images/hero-logo.png" alt="Hero Logo" />
+                    </div>
+
+                    <!-- Text Content -->
+                    <div class="text-center">
+                        <h1
+                            class="text-3xl lg:text-5xl md:text-5xl font-semibold tracking-tight text-white text-opacity-90">
+                            Marinduque State University
+                        </h1>
+                        <p class="mt-4 text-xs md:text-base font-sm text-white text-opacity-80 sm:text-lg">
+                            College of Education Bachelor of Secondary Education Major in Science Program Alumni
+                            Directory (1996-2020)
+                        </p>
+                        <div class="mt-8 flex items-center justify-center gap-x-4 lg:gap-x-8">
+                            <button
+                                class="rounded-xl px-3.5 py-2.5 text-sm font-semibold text-white transition-transform duration-300"
+                                style="background-color: #f4c633;" onmouseover="this.style.transform='translateY(-3px)'"
+                                onmouseout="this.style.transform='translateY(0)'">
+                                Get started
+                            </button>
+                            <a href="#aboutSection"
+                                class="inline-flex items-center gap-2 text-sm font-semibold text-white">
+                                <span>Learn more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-6">
+                                    <path fill-rule="evenodd"
+                                        d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </section>
+        </header>
+
+        <!-- About Section -->
+        <section class="overflow-hidden bg-[#f8f9fd] py-10 pb-24 px-8 lg:px-12" id="aboutSection">
+            <div class="mx-auto max-w-7xl lg:px-8">
+                <!-- About Header -->
+                <div class="lg:text-left lg:mb-12 mb-6">
+                    <div class="border-l-8 border-[#f4c633] pl-4 inline-block">
+                        <h2 class="text-3xl font-bold text-[#393939]">About.</h2>
+                    </div>
+                </div>
+                <!-- Content Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-12 lg:gap-x-16 items-center">
+                    <!-- Text Content -->
+                    <div>
+                        <h3 class="text-xl lg:2xl font-bold text-[#393939]">
+                            WELCOME TO THE COLLEGE OF EDUCATION
+                        </h3>
+                        <p class="mt-6 text-sm lg:text-base text-justify font-questrial text-[#393939] leading-relaxed">
+                            The MarSU College of Education (CED) is the premier school for Teacher Education in the
+                            island Province of
+                            Marinduque.
+                            The program Bachelor of Secondary Education passed the Level IV – Phase I Accreditation last
+                            September
+                            2022,
+                            while
+                            the Bachelor of Elementary Education is Level Accredited by the Accrediting Agency of
+                            Chartered Colleges
+                            and
+                            Universities of the Philippines (AACCUP). Now, the school with the entire college has been
+                            certified ISO
+                            9001:2008
+                            in February 2017 and was awarded ISO 9001:2005 in August 2018.
+                        </p>
+                        <p
+                            class="mt-4 lg:mt-6 text-sm lg:text-base text-justify text-[#393939] font-questrial leading-relaxed">
+                            In the delivery of its services to the people, MarSU College of Education has already
+                            attested to itself
+                            as
+                            an institution
+                            providing quality education to the youth of Marinduque. With high passing percentages in the
+                            Licensure
+                            Examination for
+                            Teacher (LET) for BSEd, producing LET Board Top notchers, and high employability of its
+                            graduates,
+                            MarSU-CFd
+                            continuously
+                            commits to preparing educators imbued with ideals, aspirations, and traditions of Philippine
+                            life and
+                            cultures who assume
+                            major roles in national and global developments.
+                        </p>
+                        <p
+                            class="mt-4 lg:mt-6 text-sm lg:text-base text-justify text-[#393939] font-questrial leading-relaxed">
+                            For more details and information, please email us at <a href="mailto:sedboac@gmail.com"
+                                class="text-red-800 underline">sedboac@gmail.com</a>
+                            or visit us at 3rd TLE Building MarSU Main Campus, Panfilo M Manguera Sr. Rd, Tanza Boac,
+                            Marinduque.
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <img src="images/department-building.jpeg" alt="College of Education Building"
+                            class="h-[300px] lg:h-[600px] object-cover w-auto rounded-2xl shadow-lg ring-1 ring-gray-400/10 mx-auto lg:mx-0">
+                        <!-- Shadow at the bottom -->
+                        <div
+                            class="absolute bottom-[-15px] left-0 right-0 h-2 bg-black/50 rounded-full mx-auto blur-md">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </nav>
+        </section>
 
-      <section class="px-6 pt-16 lg:px-18">
-        <div class="mx-auto max-w-2xl pb-2 lg:pb-8 mt-12 sm:mt-18 lg:mt-18">
-          <!-- Hero Logo -->
-          <div class="sm:mb-8 flex justify-center items-center">
-            <img class="h-32 custom:h-56 lg:h-64 w-auto" src="images/hero-logo.png" alt="Hero Logo" />
-          </div>
+        <!-- Alumni Section -->
+        <section class="bg-neutral-700 py-10 px-10 lg:px-12" id="alumniSection">
+            <div class="container mx-auto lg:px-6 flex flex-col gap-6 lg:gap-12">
+                <div class="border-l-8 border-[#f4c633] pl-4 inline-block mt-2 mb-6">
+                    <h2 class="text-3xl font-bold text-white">Alumni.</h2>
+                </div>
 
-          <!-- Text Content -->
-          <div class="text-center">
-            <h1 class="text-3xl lg:text-5xl md:text-5xl font-semibold tracking-tight text-white text-opacity-90">
-              Marinduque State University
-            </h1>
-            <p class="mt-4 text-xs md:text-base font-sm text-white text-opacity-80 sm:text-lg">
-              College of Education Bachelor of Secondary Education Major in Science Program Alumni Directory (1996-2020)
-            </p>
-            <div class="mt-8 flex items-center justify-center gap-x-4 lg:gap-x-8">
-              <button
-                class="rounded-xl px-3.5 py-2.5 text-sm font-semibold text-white transition-transform duration-300"
-                style="background-color: #f4c633;" onmouseover="this.style.transform='translateY(-3px)'"
-                onmouseout="this.style.transform='translateY(0)'">
-                Get started
-              </button>
-              <a href="#aboutSection" class="inline-flex items-center gap-2 text-sm font-semibold text-white">
-                <span>Learn more</span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                  <path fill-rule="evenodd"
-                    d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z"
-                    clip-rule="evenodd" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </header>
+                <!-- First Alumni Card -->
+                <div class="flex flex-col md:flex-row items-center md:items-start mb-8 md:mb-12 gap-6 lg:gap8 person">
+                    <div class="md:w-1/3 mb-4 md:mb-0">
+                        <img class="w-full object-top rounded-xl object-cover mx-auto md:mx-0"
+                            src="images/Kyle-Atienza.jpg" alt="Kyle-Atienza.jpg">
+                    </div>
+                    <div class="md:w-2/3 md:ml-6 text-center md:text-left">
+                        <h2 class="text-2xl lg:text-3xl font-bold text-white text-opacity-90 sm:text-base">Mr. Kyle
+                            David V. Atienza
+                        </h2>
+                        <p class="mt-6 text-justify text-stone-200 font-questrial">
+                            Kyle David V. Atienza, a 27-year-old former Special Science Teacher in Marinduque, dedicated
+                            his weekdays
+                            to
+                            teaching STEM and research subjects while spending weekends conducting outreach activities
+                            and free
+                            literacy
+                            sessions with his rolling blackboard. Fondly called "Kuya Kyle" by his beneficiaries and
+                            team, he is known
+                            for his unwavering commitment to education and his values of kindness, faith, and love.
+                            Recognized for his
+                            excellence and impact, he was recently promoted to Senior Education Program Specialist for
+                            Human Resource
+                            Development in the same agency.
+                        </p>
+                        <h3 class="mt-4 font-semibold text-lg text-white">Achievements:</h3>
+                        <ul class="mt-2list-disc list-outside text-stone-200 font-questrial text-left">
+                            <li>Outstanding Educator of the Year (Instabright International Awards, 2023)</li>
+                            <li>Awardee, Remarkable Youth Leader Award (Online SDG Youth Action, 2020-2021)</li>
+                            <li>Medal of Excellence / Marinduque State College & Department of Science and Technology
+                                (2018)</li>
+                            <div class="hidden-items hidden"
+                                style="overflow: hidden; max-height: 0; transition: max-height 0.3s ease;">
+                                <li>National Awardee, CSC Honor Awards Program Outstanding Government Worker 2024 - CSC
+                                    Pagasa Award
+                                </li>
+                                <li>(Civil Service Commission, 2024) National Awardee, iVolunteer Philippines Champion
+                                    for Change
+                                    Leadership (iVolunteer PH, 2022)</li>
+                                <li>Awardee, Natatanging Kabataang Marinduqueno (Provincial Youth Development Council -
+                                    Marinduque,
+                                    2022)</li>
+                                <li>Awardee, United Nations Sustainable Development Goals Youth Circle Prize (Online SDG
+                                    Youth Action
+                                    Forum, 2022)</li>
+                                <li>Remarkable Teacher of the Year (DepEd-Marinduque, 2022)</li>
+                                <li>Awardee, Seven Outstanding Juans of the Philippines (Youth for Every Juan, 2021)
+                                </li>
+                                <li>National Finalist, TAYO Awards (TAYO Foundation, 2021)</li>
+                                <li>Finalist, Sustainable Development Leadership Awards (Sustainability PH, 2021)</li>
+                                <li>Awardee, SDG Champion (Samahan ng Kabataang Boluntaryo ng Pilipinas, 2021)</li>
+                                <li>Recipient, Project LEARN Teacher (Metrobank Foundation Inc., 2021)</li>
+                                <li>Regional Finalist, Outstanding COVID-19 Volunteer of the Philippines (NEDA MIMAROPA,
+                                    2020)</li>
+                            </div>
+                        </ul>
+                        <button
+                            class="toggleButton text-sm lg:text-base inline-flex mt-3 items-center gap-2 text-yellow-400 focus:outline-none">
+                            <span>View all</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-6">
+                                <path fill-rule="evenodd"
+                                    d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
 
-    <!-- About Section -->
-    <section class="overflow-hidden bg-[#f8f9fd] py-10 pb-24 px-8 lg:px-12" id="aboutSection">
-      <div class="mx-auto max-w-7xl lg:px-8">
-        <!-- About Header -->
-        <div class="lg:text-left lg:mb-12 mb-6">
-          <div class="border-l-8 border-[#f4c633] pl-4 inline-block">
-            <h2 class="text-3xl font-bold text-[#393939]">About.</h2>
-          </div>
-        </div>
-        <!-- Content Grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-12 lg:gap-x-16 items-center">
-          <!-- Text Content -->
-          <div>
-            <h3 class="text-xl lg:2xl font-bold text-[#393939]">
-              WELCOME TO THE COLLEGE OF EDUCATION
-            </h3>
-            <p class="mt-6 text-sm lg:text-base text-justify font-questrial text-[#393939] leading-relaxed">
-              The MarSU College of Education (CED) is the premier school for Teacher Education in the island Province of
-              Marinduque.
-              The program Bachelor of Secondary Education passed the Level IV – Phase I Accreditation last September
-              2022,
-              while
-              the Bachelor of Elementary Education is Level Accredited by the Accrediting Agency of Chartered Colleges
-              and
-              Universities of the Philippines (AACCUP). Now, the school with the entire college has been certified ISO
-              9001:2008
-              in February 2017 and was awarded ISO 9001:2005 in August 2018.
-            </p>
-            <p class="mt-4 lg:mt-6 text-sm lg:text-base text-justify text-[#393939] font-questrial leading-relaxed">
-              In the delivery of its services to the people, MarSU College of Education has already attested to itself
-              as
-              an institution
-              providing quality education to the youth of Marinduque. With high passing percentages in the Licensure
-              Examination for
-              Teacher (LET) for BSEd, producing LET Board Top notchers, and high employability of its graduates,
-              MarSU-CFd
-              continuously
-              commits to preparing educators imbued with ideals, aspirations, and traditions of Philippine life and
-              cultures who assume
-              major roles in national and global developments.
-            </p>
-            <p class="mt-4 lg:mt-6 text-sm lg:text-base text-justify text-[#393939] font-questrial leading-relaxed">
-              For more details and information, please email us at <a href="mailto:sedboac@gmail.com"
-                class="text-red-800 underline">sedboac@gmail.com</a>
-              or visit us at 3rd TLE Building MarSU Main Campus, Panfilo M Manguera Sr. Rd, Tanza Boac, Marinduque.
-            </p>
-          </div>
-          <div class="relative">
-            <img src="images/department-building.jpeg" alt="College of Education Building"
-              class="h-[300px] lg:h-[600px] object-cover w-auto rounded-2xl shadow-lg ring-1 ring-gray-400/10 mx-auto lg:mx-0">
-            <!-- Shadow at the bottom -->
-            <div class="absolute bottom-[-15px] left-0 right-0 h-2 bg-black/50 rounded-full mx-auto blur-md"></div>
-          </div>
-        </div>
-      </div>
-    </section>
+                <!-- Second Alumni Card -->
+                <div
+                    class="flex flex-col md:flex-row-reverse items-center md:items-start mb-8 md:mb-12 gap-6 lg:gap8 person">
+                    <div class="md:w-1/3 mb-4 md:mb-0">
+                        <img class="w-full object-top rounded-xl object-cover mx-auto md:mx-0"
+                            src="images/Reydante-Olivadez.jpg" alt="Kyle-Atienza.jpg">
+                    </div>
+                    <div class="md:w-2/3 text-center md:text-left">
+                        <h2 class="text-2xl lg:text-3xl font-bold text-white text-opacity-90">Dr. Reydante M. Olivadez
+                        </h2>
+                        <p class="mt-6 text-justify text-stone-200 font-questrial">
+                            Reydante M. Olavidez, a 40-year-old Certified Biology Teacher in Louisiana, USA, believes
+                            that education
+                            laid the foundation for his achievements. The values and discipline he gained during his
+                            studies helped
+                            him
+                            overcome the challenges of international teaching and adapt to diverse environments. He
+                            advises BSEd
+                            students to "believe in the power of your profession, embrace challenges, and strive for
+                            growth." He
+                            emphasizes that while the path may not always be easy, it is deeply rewarding, with the
+                            potential to
+                            impact
+                            lives in ways that go beyond imagination.
+                        </p>
+                        <h3 class="mt-4 font-semibold text-lg text-white">Achievements:</h3>
+                        <ul class="mt-2list-disc list-outside text-stone-200 font-questrial text-left">
+                            <li>Coach (Support Staff) – Science Competition High School – Thailand</li>
+                            <li>Teacher of the Month (October) – Tensas High School</li>
+                            <li>Teacher of the Month (December) – Madison High School</li>
+                            <div class="hidden-items hidden"
+                                style="overflow: hidden; max-height: 0; transition: max-height 0.3s ease;">
+                                <li>Support Teacher, Science Project Work Competition M.4-6 of Bangbowitthayakhom
+                                    School,
+                                    Thailand / Central English Medium Instruction Programmes Center Open House 2023 Zone
+                                    C (2023)</li>
+                                <li>Support Teacher, Science Project Work Competition M.4-6 Competition 2022 – Central
+                                    English Medium Instruction Programmes Center Open House 2022 / Bangbowitthayakhom
+                                    School, Thailand
+                                    (2022)
+                                </li>
+                                <li>MOU Coordinator, 1st Online Cultural Exchange Immersion Program / University of
+                                    Perpetual
+                                    Help System Dalta Las Pinas Campus and Bangbowitthayakhom School, Thailand (2022)
+                                </li>
+                                <li>Research Presenter, Faculty and Student Exchange Program / University of Perpetual
+                                    Help
+                                    System Dalta Las Pinas Campus (2019)</li>
+                                <li>Doctor of Education (Major in Educational Administration)</li>
+                                <li>Member of Louisiana Science Teachers Association – Current</li>
+                                <li>Member of Association of Chemistry Teachers (Science Coach)</li>
+                                <li>Member of Royal Institution of Singapore</li>
+                                <li>Member of the International Guild of Educators Authors and Researchers</li>
+                                <li>Puplished paper entitled “Teaching Orientation and Performance Evaluation of Foreign
+                                    Teachers in Selected Government Schools in Thailand” – International Conference on
+                                    education.
+                                    Srinakharinwirot University, Thailand. May 12, 2022.</li>
+                            </div>
+                        </ul>
+                        <button
+                            class="toggleButton text-sm lg:text-base inline-flex mt-3 items-center gap-2 text-yellow-400 focus:outline-none">
+                            <span>View all</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-6">
+                                <path fill-rule="evenodd"
+                                    d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
 
-    <!-- Alumni Section -->
-    <section style="background: #525252;" class="py-10 px-10 lg:px-12" id="alumniSection">
-      <div class="container mx-auto lg:px-6 flex flex-col gap-6 lg:gap-12">
-        <div class="border-l-8 border-[#f4c633] pl-4 inline-block mt-2 mb-6">
-          <h2 class="text-3xl font-bold text-white">Alumni.</h2>
-        </div>
+                <!-- Third Alumni Card -->
+                <div class="flex flex-col md:flex-row items-center md:items-start mb-8 md:mb-12 gap-6 lg:gap8 person">
+                    <div class="md:w-1/3 mb-4 md:mb-0">
+                        <img class="w-full object-top rounded-xl object-cover mx-auto md:mx-0"
+                            src="images/Menandro-Merlin.jpg" alt="Kyle-Atienza.jpg">
+                    </div>
+                    <div class="md:w-2/3 md:ml-6 text-center md:text-left">
+                        <h2 class="text-2xl lg:text-3xl font-bold text-white text-opacity-90">Dr. Menandro M. Merlin
+                        </h2>
+                        <p class="mt-6 text-justify text-stone-200 font-questrial">
+                            Dr. Menandro M. Merlin, 48, an Associate Professor IV and Director of Institutional Quality
+                            Assurance,
+                            inspires his students with the principle of "paying it forward," emphasizing that talents
+                            are gifts from
+                            God
+                            meant to be shared. He advises BSEd students to continuously develop their talents, skills,
+                            intelligence,
+                            and values, never stop learning, and show empathy by uplifting those in need. He reminds
+                            them that all
+                            possessions and abilities are borrowed and should be cultivated for the benefit of others.
+                        </p>
+                        <h3 class="mt-4 font-semibold text-lg text-white">Achievements:</h3>
+                        <ul class="mt-2list-disc list-outside text-stone-200 font-questrial text-left">
+                            <li>Character Award / Marinduque State College – PRAISE (2023)</li>
+                            <li>Best Research Adviser / DepEd MIMAROPA (2005)</li>
+                            <li>Champion, Action Research Competition (Teacher Category) / DepEd MIMAROPA (2015)</li>
+                            <div class="hidden-items hidden"
+                                style="overflow: hidden; max-height: 0; transition: max-height 0.3s ease;">
+                                <li>Champion, Odyssey of the Mind Regional Competition (Teacher Category) / Odyssey of
+                                    the
+                                    Mind Program (2009)</li>
+                                <li>Champion, Science Investigatory Project Writing (Teacher Category) / National
+                                    Science
+                                    and
+                                    Technology Fair (2007)</li>
+                            </div>
+                        </ul>
+                        <button
+                            class="toggleButton text-sm lg:text-base inline-flex mt-3 items-center gap-2 text-yellow-400 focus:outline-none">
+                            <span>View all</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-6">
+                                <path fill-rule="evenodd"
+                                    d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
 
-        <!-- First Alumni Card -->
-        <div class="flex flex-col md:flex-row items-center md:items-start mb-8 md:mb-12 gap-6 lg:gap8 person">
-          <div class="md:w-1/3 mb-4 md:mb-0">
-            <img class="w-full object-top rounded-xl object-cover mx-auto md:mx-0" src="images/Kyle-Atienza.jpg"
-              alt="Kyle-Atienza.jpg">
-          </div>
-          <div class="md:w-2/3 md:ml-6 text-center md:text-left">
-            <h2 class="text-2xl lg:text-3xl font-bold text-white text-opacity-90 sm:text-base">Mr. Kyle David V. Atienza
-            </h2>
-            <p class="mt-6 text-sm lg:text-base text-justify text-[#9f9f9f] font-questrial">
-              Kyle David V. Atienza, a 27-year-old former Special Science Teacher in Marinduque, dedicated his weekdays
-              to
-              teaching STEM and research subjects while spending weekends conducting outreach activities and free
-              literacy
-              sessions with his rolling blackboard. Fondly called "Kuya Kyle" by his beneficiaries and team, he is known
-              for his unwavering commitment to education and his values of kindness, faith, and love. Recognized for his
-              excellence and impact, he was recently promoted to Senior Education Program Specialist for Human Resource
-              Development in the same agency.
-            </p>
-            <h3 class="mt-4 font-semibold text-lg text-white">Achievements:</h3>
-            <ul class="mt-2 text-sm lg:text-base list-disc list-outside text-[#9f9f9f] font-questrial text-left">
-              <li>Outstanding Educator of the Year (Instabright International Awards, 2023)</li>
-              <li>Awardee, Remarkable Youth Leader Award (Online SDG Youth Action, 2020-2021)</li>
-              <li>Medal of Excellence / Marinduque State College & Department of Science and Technology
-                (2018)</li>
-              <div class="hidden-items hidden"
-                style="overflow: hidden; max-height: 0; transition: max-height 0.3s ease;">
-                <li>National Awardee, CSC Honor Awards Program Outstanding Government Worker 2024 - CSC Pagasa Award
-                </li>
-                <li>(Civil Service Commission, 2024) National Awardee, iVolunteer Philippines Champion for Change
-                  Leadership (iVolunteer PH, 2022)</li>
-                <li>Awardee, Natatanging Kabataang Marinduqueno (Provincial Youth Development Council - Marinduque,
-                  2022)</li>
-                <li>Awardee, United Nations Sustainable Development Goals Youth Circle Prize (Online SDG Youth Action
-                  Forum, 2022)</li>
-                <li>Remarkable Teacher of the Year (DepEd-Marinduque, 2022)</li>
-                <li>Awardee, Seven Outstanding Juans of the Philippines (Youth for Every Juan, 2021)</li>
-                <li>National Finalist, TAYO Awards (TAYO Foundation, 2021)</li>
-                <li>Finalist, Sustainable Development Leadership Awards (Sustainability PH, 2021)</li>
-                <li>Awardee, SDG Champion (Samahan ng Kabataang Boluntaryo ng Pilipinas, 2021)</li>
-                <li>Recipient, Project LEARN Teacher (Metrobank Foundation Inc., 2021)</li>
-                <li>Regional Finalist, Outstanding COVID-19 Volunteer of the Philippines (NEDA MIMAROPA, 2020)</li>
-              </div>
-            </ul>
-            <button
-              class="toggleButton text-sm lg:text-base inline-flex mt-3 items-center gap-2 text-yellow-400 focus:outline-none">
-              <span>View all</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                <path fill-rule="evenodd"
-                  d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
-                  clip-rule="evenodd" />
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <!-- Second Alumni Card -->
-        <div class="flex flex-col md:flex-row-reverse items-center md:items-start mb-8 md:mb-12 gap-6 lg:gap8 person">
-          <div class="md:w-1/3 mb-4 md:mb-0">
-            <img class="w-full object-top rounded-xl object-cover mx-auto md:mx-0" src="images/Reydante-Olivadez.jpg"
-              alt="Kyle-Atienza.jpg">
-          </div>
-          <div class="md:w-2/3 text-center md:text-left">
-            <h2 class="text-2xl lg:text-3xl font-bold text-white text-opacity-90">Dr. Reydante M. Olivadez</h2>
-            <p class="mt-6 text-sm lg:text-base text-justify text-[#9f9f9f] font-questrial">
-              Reydante M. Olavidez, a 40-year-old Certified Biology Teacher in Louisiana, USA, believes that education
-              laid the foundation for his achievements. The values and discipline he gained during his studies helped
-              him
-              overcome the challenges of international teaching and adapt to diverse environments. He advises BSEd
-              students to "believe in the power of your profession, embrace challenges, and strive for growth." He
-              emphasizes that while the path may not always be easy, it is deeply rewarding, with the potential to
-              impact
-              lives in ways that go beyond imagination.
-            </p>
-            <h3 class="mt-4 font-semibold text-lg text-white">Achievements:</h3>
-            <ul class="mt-2 text-sm lg:text-base list-disc list-outside text-[#9f9f9f] font-questrial text-left">
-              <li>Coach (Support Staff) – Science Competition High School – Thailand</li>
-              <li>Teacher of the Month (October) – Tensas High School</li>
-              <li>Teacher of the Month (December) – Madison High School</li>
-              <div class="hidden-items hidden"
-                style="overflow: hidden; max-height: 0; transition: max-height 0.3s ease;">
-                <li>Support Teacher, Science Project Work Competition M.4-6 of Bangbowitthayakhom School,
-                  Thailand / Central English Medium Instruction Programmes Center Open House 2023 Zone C (2023)</li>
-                <li>Support Teacher, Science Project Work Competition M.4-6 Competition 2022 – Central
-                  English Medium Instruction Programmes Center Open House 2022 / Bangbowitthayakhom School, Thailand
-                  (2022)
-                </li>
-                <li>MOU Coordinator, 1st Online Cultural Exchange Immersion Program / University of
-                  Perpetual
-                  Help System Dalta Las Pinas Campus and Bangbowitthayakhom School, Thailand (2022)</li>
-                <li>Research Presenter, Faculty and Student Exchange Program / University of Perpetual
-                  Help
-                  System Dalta Las Pinas Campus (2019)</li>
-                <li>Doctor of Education (Major in Educational Administration)</li>
-                <li>Member of Louisiana Science Teachers Association – Current</li>
-                <li>Member of Association of Chemistry Teachers (Science Coach)</li>
-                <li>Member of Royal Institution of Singapore</li>
-                <li>Member of the International Guild of Educators Authors and Researchers</li>
-                <li>Puplished paper entitled “Teaching Orientation and Performance Evaluation of Foreign
-                  Teachers in Selected Government Schools in Thailand” – International Conference on education.
-                  Srinakharinwirot University, Thailand. May 12, 2022.</li>
-              </div>
-            </ul>
-            <button
-              class="toggleButton text-sm lg:text-base inline-flex mt-3 items-center gap-2 text-yellow-400 focus:outline-none">
-              <span>View all</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                <path fill-rule="evenodd"
-                  d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
-                  clip-rule="evenodd" />
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <!-- Third Alumni Card -->
-        <div class="flex flex-col md:flex-row items-center md:items-start mb-8 md:mb-12 gap-6 lg:gap8 person">
-          <div class="md:w-1/3 mb-4 md:mb-0">
-            <img class="w-full object-top rounded-xl object-cover mx-auto md:mx-0" src="images/Menandro-Merlin.jpg"
-              alt="Kyle-Atienza.jpg">
-          </div>
-          <div class="md:w-2/3 md:ml-6 text-center md:text-left">
-            <h2 class="text-2xl lg:text-3xl font-bold text-white text-opacity-90">Dr. Menandro M. Merlin</h2>
-            <p class="mt-6 text-sm lg:text-base text-justify text-[#9f9f9f] font-questrial">
-              Dr. Menandro M. Merlin, 48, an Associate Professor IV and Director of Institutional Quality Assurance,
-              inspires his students with the principle of "paying it forward," emphasizing that talents are gifts from
-              God
-              meant to be shared. He advises BSEd students to continuously develop their talents, skills, intelligence,
-              and values, never stop learning, and show empathy by uplifting those in need. He reminds them that all
-              possessions and abilities are borrowed and should be cultivated for the benefit of others.
-            </p>
-            <h3 class="mt-4 font-semibold text-lg text-white">Achievements:</h3>
-            <ul class="mt-2 text-sm lg:text-base list-disc list-outside text-[#9f9f9f] font-questrial text-left">
-              <li>Character Award / Marinduque State College – PRAISE (2023)</li>
-              <li>Best Research Adviser / DepEd MIMAROPA (2005)</li>
-              <li>Champion, Action Research Competition (Teacher Category) / DepEd MIMAROPA (2015)</li>
-              <div class="hidden-items hidden"
-                style="overflow: hidden; max-height: 0; transition: max-height 0.3s ease;">
-                <li>Champion, Odyssey of the Mind Regional Competition (Teacher Category) / Odyssey of the
-                  Mind Program (2009)</li>
-                <li>Champion, Science Investigatory Project Writing (Teacher Category) / National Science
-                  and
-                  Technology Fair (2007)</li>
-              </div>
-            </ul>
-            <button
-              class="toggleButton text-sm lg:text-base inline-flex mt-3 items-center gap-2 text-yellow-400 focus:outline-none">
-              <span>View all</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                <path fill-rule="evenodd"
-                  d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
-                  clip-rule="evenodd" />
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <!-- Fourth Alumni Card -->
-        <div class="flex flex-col md:flex-row-reverse items-center md:items-start mb-8 md:mb-12 gap-6 lg:gap8 person">
-          <div class="md:w-1/3 mb-4 md:mb-0">
-            <img class="w-full object-top rounded-xl object-cover mx-auto md:mx-0" src="images/Joycee-Osacdin.jpg"
-              alt="Kyle-Atienza.jpg">
-          </div>
-          <div class="md:w-2/3 text-center md:text-left">
-            <h2 class="text-2xl lg:text-3xl font-bold text-white text-opacity-90">Ms. Joycee N. Osacdin</h2>
-            <p class="mt-6 text-sm lg:text-base text-justify text-[#9f9f9f] font-questrial">
-              Ms. Joycee N. Osacdin, a 29-year-old Science teacher, encourages BSEd students to discover their strengths
-              and use them as tools for success while turning weaknesses into opportunities for growth. She highlights
-              that teaching is a lifelong journey of learning and self-improvement. Most importantly, she urges future
-              educators to serve the country with dedication and passion, as committed teachers are needed now more than
-              ever.
-            </p>
-            <h3 class="mt-4 font-semibold text-lg text-white">Achievements:</h3>
-            <ul class="mt-2 text-sm lg:text-base list-disc list-outside text-[#9f9f9f] font-questrial text-left">
-              <li>Best Action Researcher (2nd place) (SDO QC Festival of Innovation and Research 2023)</li>
-              <li>Best Presenter (2023 Continuous Improvement Project Colloquium)</li>
-              <li>2021 Outstanding Service Awardee</li>
-              <div class="hidden-items hidden"
-                style="overflow: hidden; max-height: 0; transition: max-height 0.3s ease;">
-                <li>Best in Online Preparation of Instructional Materials 2021</li>
-                <li>Best Implementer of Weekly Home Learning Plan</li>
-                <li>Best in Online Classroom Management 2021</li>
-                <li>Project Leader (School-wide Continuous Improved Project)</li>
-                <li>Division Module Writer for Research</li>
-                <li>Action/Basic Research Reviewer</li>
-              </div>
-            </ul>
-            <button
-              class="toggleButton text-sm lg:text-base inline-flex mt-3 items-center gap-2 text-yellow-400 focus:outline-none">
-              <span>View all</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                <path fill-rule="evenodd"
-                  d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
-                  clip-rule="evenodd" />
-              </svg>
-            </button>
-          </div>
-        </div>
-    </section>
+                <!-- Fourth Alumni Card -->
+                <div
+                    class="flex flex-col md:flex-row-reverse items-center md:items-start mb-8 md:mb-12 gap-6 lg:gap8 person">
+                    <div class="md:w-1/3 mb-4 md:mb-0">
+                        <img class="w-full object-top rounded-xl object-cover mx-auto md:mx-0"
+                            src="images/Joycee-Osacdin.jpg" alt="Kyle-Atienza.jpg">
+                    </div>
+                    <div class="md:w-2/3 text-center md:text-left">
+                        <h2 class="text-2xl lg:text-3xl font-bold text-white text-opacity-90">Ms. Joycee N. Osacdin</h2>
+                        <p class="mt-6 text-justify text-stone-200 font-questrial">
+                            Ms. Joycee N. Osacdin, a 29-year-old Science teacher, encourages BSEd students to discover
+                            their strengths
+                            and use them as tools for success while turning weaknesses into opportunities for growth.
+                            She highlights
+                            that teaching is a lifelong journey of learning and self-improvement. Most importantly, she
+                            urges future
+                            educators to serve the country with dedication and passion, as committed teachers are needed
+                            now more than
+                            ever.
+                        </p>
+                        <h3 class="mt-4 font-semibold text-lg text-white">Achievements:</h3>
+                        <ul class="mt-2list-disc list-outside text-stone-200 font-questrial text-left">
+                            <li>Best Action Researcher (2nd place) (SDO QC Festival of Innovation and Research 2023)
+                            </li>
+                            <li>Best Presenter (2023 Continuous Improvement Project Colloquium)</li>
+                            <li>2021 Outstanding Service Awardee</li>
+                            <div class="hidden-items hidden"
+                                style="overflow: hidden; max-height: 0; transition: max-height 0.3s ease;">
+                                <li>Best in Online Preparation of Instructional Materials 2021</li>
+                                <li>Best Implementer of Weekly Home Learning Plan</li>
+                                <li>Best in Online Classroom Management 2021</li>
+                                <li>Project Leader (School-wide Continuous Improved Project)</li>
+                                <li>Division Module Writer for Research</li>
+                                <li>Action/Basic Research Reviewer</li>
+                            </div>
+                        </ul>
+                        <button
+                            class="toggleButton text-sm lg:text-base inline-flex mt-3 items-center gap-2 text-yellow-400 focus:outline-none">
+                            <span>View all</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-6">
+                                <path fill-rule="evenodd"
+                                    d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+        </section>
 
 
 
 
-    <!-- Officials Section -->
-    <section class="bg-[#f9fafe] px-12 pb-14" id="officialsSection">
-      <div class="container mx-auto lg:px-6 flex flex-col">
-        <div class="border-l-8 border-[#f4c633] inline-block my-8 lg:my-12">
-          <h2 class="text-3xl font-bold pl-4 text-[#393939]">Officials.</h2>
-        </div>
-        <div class="container lg:px-6 pb-4 lg:pb-10 mx-auto mt-2">
-          <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
-            <!-- Card 1 -->
-            <div class="flex flex-col items-center text-center bg-white p-6 shadow-xl rounded-xl">
-              <img class="object-cover w-full h-auto rounded-xl" src="images/Joy-Montejo.jpg" alt="">
-              <h1 class="mt-4 lg:text-xl font-bold text-[#393939]">Joy S. Montejo, LPT, EdD</h1>
-              <p class="mt-2 text-sm lg:text-base font-questrial text-[#9f9f9f]">Dean, College of Education</p>
-              <p class="mt-2 text-sm lg:text-base font-questrial text-[#9f9f9f]">Associate Professor I</p>
+        <!-- Officials Section -->
+        <section class="bg-[#f9fafe] px-12 pb-14" id="officialsSection">
+            <div class="container mx-auto lg:px-6 flex flex-col">
+                <div class="border-l-8 border-[#f4c633] inline-block my-8 lg:my-12">
+                    <h2 class="text-3xl font-bold pl-4 text-[#393939]">Officials.</h2>
+                </div>
+                <div class="container lg:px-6 pb-4 lg:pb-10 mx-auto mt-2">
+                    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+                        <!-- Card 1 -->
+                        <div class="flex flex-col items-center text-center bg-white p-6 shadow-xl rounded-xl">
+                            <img class="object-cover w-full h-auto rounded-xl" src="images/Joy-Montejo.jpg" alt="">
+                            <h1 class="mt-4 lg:text-xl font-bold text-[#393939]">Joy S. Montejo, LPT, EdD</h1>
+                            <p class="mt-2 text-sm lg:text-base font-questrial text-[#9f9f9f]">Dean, College of
+                                Education</p>
+                            <p class="mt-2 text-sm lg:text-base font-questrial text-[#9f9f9f]">Associate Professor I</p>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="flex flex-col items-center text-center bg-white p-6 shadow-xl rounded-xl">
+                            <img class="object-cover w-full h-auto rounded-xl" src="images/Susan-Pineda.jpg" alt="">
+                            <h1 class="mt-4 lg:text-xl font-bold text-[#393939]">Susan B. Pineda, LPT, PhD</h1>
+                            <p class="mt-2 font-questrial text-[#9f9f9f]">Associate Dean, College of Education</p>
+                            <p class="mt-2 text-sm lg:text-base font-questrial text-[#9f9f9f]">Program Head, BEEd</p>
+                            <p class="mt-2 text-sm lg:text-base font-questrial text-[#9f9f9f]">Associate Professor V</p>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="flex flex-col items-center text-center bg-white p-6 shadow-xl rounded-xl">
+                            <img class="object-cover w-full h-auto rounded-xl" src="images/Noel-Palomares.jpg" alt="">
+                            <h1 class="mt-4 lg:text-xl font-bold text-[#393939]">Noel R. Palomares, LPT, EdD</h1>
+                            <p class="mt-2 text-sm lg:text-base font-questrial text-[#9f9f9f]">Head, Integrated High
+                                School Department
+                            </p>
+                            <p class="mt-2 text-sm lg:text-base font-questrial text-[#9f9f9f]">Associate Professor II
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="flex flex-col items-center text-center bg-white p-6 shadow-xl rounded-xl">
-              <img class="object-cover w-full h-auto rounded-xl" src="images/Susan-Pineda.jpg" alt="">
-              <h1 class="mt-4 lg:text-xl font-bold text-[#393939]">Susan B. Pineda, LPT, PhD</h1>
-              <p class="mt-2 font-questrial text-[#9f9f9f]">Associate Dean, College of Education</p>
-              <p class="mt-2 text-sm lg:text-base font-questrial text-[#9f9f9f]">Program Head, BEEd</p>
-              <p class="mt-2 text-sm lg:text-base font-questrial text-[#9f9f9f]">Associate Professor V</p>
+        </section>
+
+
+        <!-- Footer Section -->
+        <footer class="bg-[#0e365f] shadow-sm">
+            <div class="w-full max-w-screen-xl mx-auto px-4 py-6 md:py-8">
+                <div class="sm:flex sm:items-center sm:justify-between">
+                    <!-- Logo and Copyright Section -->
+                    <a href="#homeSection" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                        <img src="images/department-logo.png" class="lg:h-12 h-14" alt="Department Logo" />
+                        <span class="font-questrial text-xs sm:text-sm text-white">
+                            © 2025. All Rights Reserved.
+                        </span>
+                    </a>
+                    <!-- Navigation Links -->
+                    <ul
+                        class="flex flex-wrap items-center gap-4 sm:gap-6 font-questrial text-xs sm:text-sm font-medium text-white">
+                        <li>
+                            <a href="#homeSection" class="hover:underline">Home</a>
+                        </li>
+                        <li>
+                            <a href="#aboutSection" class="hover:underline">About</a>
+                        </li>
+                        <li>
+                            <a href="#alumniSection" class="hover:underline">Alumni</a>
+                        </li>
+                        <li>
+                            <a href="#officialsSection" class="hover:underline">Officials</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </footer>
+    </main>
 
-            <!-- Card 3 -->
-            <div class="flex flex-col items-center text-center bg-white p-6 shadow-xl rounded-xl">
-              <img class="object-cover w-full h-auto rounded-xl" src="images/Noel-Palomares.jpg" alt="">
-              <h1 class="mt-4 lg:text-xl font-bold text-[#393939]">Noel R. Palomares, LPT, EdD</h1>
-              <p class="mt-2 text-sm lg:text-base font-questrial text-[#9f9f9f]">Head, Integrated High School Department
-              </p>
-              <p class="mt-2 text-sm lg:text-base font-questrial text-[#9f9f9f]">Associate Professor II
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-
-    <!-- Footer Section -->
-    <footer class="bg-[#0e365f] shadow-sm">
-      <div class="w-full max-w-screen-xl mx-auto px-4 py-6 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
-          <!-- Logo and Copyright Section -->
-          <a href="#homeSection" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-            <img src="images/department-logo.png" class="lg:h-12 h-14" alt="Department Logo" />
-            <span class="font-questrial text-xs sm:text-sm text-white">
-              © 2025. All Rights Reserved.
-            </span>
-          </a>
-          <!-- Navigation Links -->
-          <ul
-            class="flex flex-wrap items-center gap-4 sm:gap-6 font-questrial text-xs sm:text-sm font-medium text-white">
-            <li>
-              <a href="#homeSection" class="hover:underline">Home</a>
-            </li>
-            <li>
-              <a href="#aboutSection" class="hover:underline">About</a>
-            </li>
-            <li>
-              <a href="#alumniSection" class="hover:underline">Alumni</a>
-            </li>
-            <li>
-              <a href="#officialsSection" class="hover:underline">Officials</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-  </main>
-
-  <script src="js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/flowbite/dist/flowbite.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite/dist/flowbite.min.js"></script>
 </body>
 
 </html>
